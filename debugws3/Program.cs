@@ -87,6 +87,40 @@ namespace debugws3
 
       double result = numbersToBeCalculated[0];
 
+      var y = 0;
+      for (var i = 1; i < numbersToBeCalculated.Length; i++)
+      {
+        switch (operations[y])
+        {
+          case '/':
+            {
+              numbersToBeCalculated[i-1] /= numbersToBeCalculated[i];
+              operations[y] = '+';
+              numbersToBeCalculated[i] = 0;
+              break;
+            }
+        }
+         y++;
+      }
+
+      var x = 0;
+      for (var i = 1; i < numbersToBeCalculated.Length; i++)
+      {
+        switch (operations[x])
+        {
+          case '*':
+            {
+              numbersToBeCalculated[i-1] *= numbersToBeCalculated[i];
+              operations[x] = '+';
+              numbersToBeCalculated[i] = 0;
+              break;
+            }
+        }
+         x++;
+      }
+// 1 + 3 * 2        1 + 6 + 0
+// [1,6,0]
+// [+, +]
       var j = 0;
       for (var i = 1; i < numbersToBeCalculated.Length; i++)
       {

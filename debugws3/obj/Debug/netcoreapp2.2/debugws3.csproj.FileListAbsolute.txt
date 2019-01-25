@@ -9,3 +9,14 @@
 /home/derik/workshops/debugws3/debugws3/obj/Debug/netcoreapp2.2/debugws3.dll
 /home/derik/workshops/debugws3/debugws3/obj/Debug/netcoreapp2.2/debugws3.pdb
 /home/derik/workshops/debugws3/debugws3/obj/Debug/netcoreapp2.2/debugws3.csprojAssemblyReference.cache
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\bin\Debug\netcoreapp2.2\debugws3.deps.json
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\bin\Debug\netcoreapp2.2\debugws3.runtimeconfig.json
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\bin\Debug\netcoreapp2.2\debugws3.runtimeconfig.dev.json
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\bin\Debug\netcoreapp2.2\debugws3.dll
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\bin\Debug\netcoreapp2.2\debugws3.pdb
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\obj\Debug\netcoreapp2.2\debugws3.csprojAssemblyReference.cache
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\obj\Debug\netcoreapp2.2\debugws3.csproj.CoreCompileInputs.cache
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\obj\Debug\netcoreapp2.2\debugws3.AssemblyInfoInputs.cache
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\obj\Debug\netcoreapp2.2\debugws3.AssemblyInfo.cs
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\obj\Debug\netcoreapp2.2\debugws3.dll
+C:\Users\Nathan Ngobale\Documents\Work\25 01 2019\Nathan FOrl\DebugWorkshopPrac3\debugws3\obj\Debug\netcoreapp2.2\debugws3.pdb
