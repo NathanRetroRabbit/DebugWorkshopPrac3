@@ -64,6 +64,35 @@ namespace debugws3
       return true;
     }
 
+  private static int[] createSplicedArray (int[] a, int numToAvoid)
+  {
+    int[] result = new int[a.Length-1];
+    int index = 0;
+    for (int i =0; i < a.Length; i++)
+    {
+      if (i != numToAvoid)
+      {
+        result[index] = a[i];
+        index++;
+      }
+    }
+    return result;
+  }
+
+    private static char[] createSplicedArrayChar (char[] a, int numToAvoid)
+  {
+    char[] result = new char[a.Length-1];
+    int index = 0;
+    for (int i =0; i < a.Length; i++)
+    {
+      if (i != numToAvoid)
+      {
+        result[index] = a[i];
+        index++;
+      }
+    }
+    return result;
+  }
     public static Result Calculate(string input)
     {
       if (input == null)
@@ -85,7 +114,7 @@ namespace debugws3
         return new Result(0, "Wrong entry. Try again using one or more operations");
       }
 
-      double result = numbersToBeCalculated[0];
+      
 
       var y = 0;
       for (var i = 1; i < numbersToBeCalculated.Length; i++)
@@ -96,14 +125,18 @@ namespace debugws3
             {
               numbersToBeCalculated[i-1] /= numbersToBeCalculated[i];
               operations[y] = '+';
-              numbersToBeCalculated[i] = 0;
+              numbersToBeCalculated = createSplicedArray(numbersToBeCalculated, i);
+              operations = createSplicedArrayChar(operations, y);
+              i--;
+              y--;
               break;
             }
         }
+        // Console.WriteLine("[{0}]", string.Join(", ", numbersToBeCalculated));
          y++;
       }
-
-      var x = 0;
+// 4/4
+      var x= 0;
       for (var i = 1; i < numbersToBeCalculated.Length; i++)
       {
         switch (operations[x])
@@ -112,15 +145,20 @@ namespace debugws3
             {
               numbersToBeCalculated[i-1] *= numbersToBeCalculated[i];
               operations[x] = '+';
-              numbersToBeCalculated[i] = 0;
+              numbersToBeCalculated = createSplicedArray(numbersToBeCalculated, i);
+              operations = createSplicedArrayChar(operations, x);
+              i--;
+              x--;
               break;
             }
         }
          x++;
       }
+
 // 1 + 3 * 2        1 + 6 + 0
 // [1,6,0]
 // [+, +]
+double result = numbersToBeCalculated[0];
       var j = 0;
       for (var i = 1; i < numbersToBeCalculated.Length; i++)
       {
