@@ -63,6 +63,7 @@ namespace Tests
 
     [DataTestMethod]
     [DataRow(" 1+4/2")]
+    [DataRow("91/3/3/3")]
     public void DoDivision(string value)
     {
       var result = Calc.Calculate(value);
